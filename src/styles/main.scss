@@ -1,0 +1,25 @@
+// /src/styles/main.scss
+
+@charset "utf-8";
+
+// Mixins
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+// Import partials
+@import "scss/custom";
+@import "scss/_lenis";
+@import "scss/_shadcn";
+
+
+// Anti-aliasing
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+

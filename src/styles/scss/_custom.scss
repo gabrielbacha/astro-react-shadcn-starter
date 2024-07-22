@@ -1,0 +1,25 @@
+html {
+  @apply min-h-screen antialiased;
+  scroll-padding-top: calc(var(--font-size) * 7.4);
+  -ms-overflow-style: none;
+  //scrollbar-width: none;
+  overscroll-behavior: none;
+  scroll-behavior: none;
+}
+
+
+html::-webkit-scrollbar {
+  //display: none; // #TODO
+}
+
+body {
+  @apply m-0 min-h-full;
+}
+
+a {
+  @apply no-underline transition-all duration-300 ease-in-out;
+}
+
+a:hover {
+  @apply translate-x-[0px];
+}

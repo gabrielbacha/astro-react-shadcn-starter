@@ -1,0 +1,25 @@
+---
+---
+<script>
+	import Lenis from "lenis";
+
+	// Check if it's not the index page
+	const lenis = new Lenis({
+		lerp: 0.1,
+		duration: 1.5,
+		smooth: true,
+		smoothTouch: false,
+		//easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+	});
+
+	lenis.on("scroll", (e) => {
+		console.log(e);
+	});
+
+	function raf(time) {
+		lenis.raf(time);
+		requestAnimationFrame(raf);
+	}
+
+	requestAnimationFrame(raf);
+</script>

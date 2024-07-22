@@ -1,0 +1,19 @@
+{
+  "prettier.bracketSameLine": true,
+  "prettier.jsxBracketSameLine": true,
+  "prettier.printWidth": 800,
+  "prettier.useTabs": true,
+  "prettier.singleAttributePerLine": false,
+  "prettier.documentSelectors": [
+    "**/*.astro"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.exclude": {
+    ".astro": true,
+    "node_modules": true,
+    "package-lock.json": true,
+    ".github": true,
+    ".vscode": true,
+    "dist": true
+  }
+}
